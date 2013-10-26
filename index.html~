@@ -15,8 +15,7 @@
 		<script src='js/jquery-ui.custom.min.js'></script>
 		<script src='js/fullcalendar.min.js'></script>
 	    <script src='js/main.js'></script>
-        <script language="javascript"/>
-		<script src='js/main.js'></script>
+        
       <script language="javascript">
 
 	$(document).ready(function() {
@@ -62,7 +61,8 @@
 				{
 					id: 999,
 					title: 'Repeating Event',
-					start: new Date(y, m, d-3, 16, 0),
+					st
+art: new Date(y, m, d-3, 16, 0),
 					allDay: false
 				},
 				{
