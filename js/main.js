@@ -2,8 +2,7 @@ window.onload = initAll;
 
 function initAll(){
 	$.getJSON( "js/menu.json", function( data ) {
-		alert("yo");
-		console.log(data);
+		//createModel(data);
 	});
 }
 
@@ -23,6 +22,10 @@ function parseMenu(map,path){
 	}else{
 		return map;
 	}
+}
+
+function createModel(map){
+	console.log(Object.keys(map));
 }
 
 
