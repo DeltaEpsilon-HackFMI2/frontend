@@ -11,6 +11,7 @@ iframe,
 h1,
 h2,
 h3,
+
 h4,
 h5,
 h6,
@@ -70,6 +71,7 @@ td {
 }
 
 html,body { 
+    overflow:hidden;
 	height: 100%;
 }
 
@@ -94,8 +96,9 @@ width: 100%;
 .callendar_panel{
 	float: left;
 	height: 95%;
+    display:inline-block;
 	width: 60%;
-	background-color: #00FF00;
+	
 
 }
 .info_panel{
@@ -110,6 +113,18 @@ width: 100%;
 	height:5%;
 	width: 100%;
 	background-color: #00FFFF;	
-    position:absolute;
+    position:fixed;
+    z-index:100;
 	bottom:5px;
+}
+
+.calbox
+{
+ position:relative;
+ width:22%;
+ height:7%;
+padding-left:1%;
+padding-top:1%;
+border:2px solid #00FF00;
+ background-color:#C0C0C0;
 }
