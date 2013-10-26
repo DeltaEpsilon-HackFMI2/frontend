@@ -79,13 +79,13 @@ html,body {
 	float: left;
 	height: 95%;
 	width: 20%;
-	background-color: #ff0000;
+	
 }
 .header{
  position:relative;
  height:10%;
 width: 100%;
- background-color: #00FFFF;
+ 
 }
 .menu{
  position:inline;
@@ -105,12 +105,12 @@ width: 100%;
 	float: left;
 	height: 95%;
 	width: 20%;
-	background-color: #C0C0C0;
+	top:50px;
 
 
 }
 .footer_panel {
-	
+	background-color:red;
 	width: 100%;
 	min-height:20px;
 }

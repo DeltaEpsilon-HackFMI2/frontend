@@ -14,9 +14,8 @@
 	    <script src='js/main.js'></script>    <script src='js/jquery.min.js'></script>
 		<script src='js/jquery-ui.custom.min.js'></script>
 		<script src='js/fullcalendar.min.js'></script>
-	    <script src='js/main.js'></script>
-        
-      <script language="javascript">
+	    <script src='js/main.js'></script> 
+        <script language="javascript">
 
 	$(document).ready(function() {
 	
@@ -61,8 +60,7 @@
 				{
 					id: 999,
 					title: 'Repeating Event',
-					st
-art: new Date(y, m, d-3, 16, 0),
+					start: new Date(y, m, d-3, 16, 0),
 					allDay: false
 				},
 				{
@@ -108,13 +106,13 @@ display:inline-block;
 		<div id="main">
         	<div class="login_panel"></div>
 			<div class="menu_panel">
-			<div class="header">header</div>
-				<div class="menu">menu</div>
+			 <div class="header"><img src="images/hf.png" alt="HackFMI" width="132" height="32"></div>
+			 <div class="menu">menu</div>
 			</div>
 			<div class="callendar_panel">
             	<div id='calendar'></div>
         	</div>
-			<div class="info_panel"></div>
+			<div class="info_panel"></br></br></br>info</div>
 		</div>		
 		<div class="footer_panel"></div>
 	</body>
