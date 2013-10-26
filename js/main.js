@@ -2,7 +2,8 @@ window.onload = initAll;
 
 function initAll(){
 	$.getJSON( "js/menu.json", function( data ) {
-		alert("success!");
+		alert("yo");
+		console.log(data);
 	});
 }
 
