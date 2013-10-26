@@ -15,8 +15,7 @@
 		<script src='js/jquery-ui.custom.min.js'></script>
 		<script src='js/fullcalendar.min.js'></script>
 	    <script src='js/main.js'></script>
-        <script language="javascript"/>
-		<script src='js/main.js'></script>
+        
       <script language="javascript">
 
 	$(document).ready(function() {
@@ -62,7 +61,8 @@
 				{
 					id: 999,
 					title: 'Repeating Event',
-					start: new Date(y, m, d-3, 16, 0),
+					st
+art: new Date(y, m, d-3, 16, 0),
 					allDay: false
 				},
 				{
@@ -96,22 +96,26 @@
 		width: 100%;
 		margin: 0 auto;
 		}
+#main
+{
+ width:100%;
+display:inline-block;
+
+}
 </style>
 </head>
 	<body>
-		<div class="login_panel"></div>
-		<div class="menu_panel">
+		<div id="main">
+        	<div class="login_panel"></div>
+			<div class="menu_panel">
 			<div class="header">header</div>
-                
-			<div class="menu">menu</div>
-		</div>
-		
-		<div class="callendar_panel">
-        
-            <div id='calendar'></div>
-
-        </div>
-		<div class="info_panel"></div>
+				<div class="menu">menu</div>
+			</div>
+			<div class="callendar_panel">
+            	<div id='calendar'></div>
+        	</div>
+			<div class="info_panel"></div>
+		</div>		
 		<div class="footer_panel"></div>
 	</body>
 </html>

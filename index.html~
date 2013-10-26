@@ -15,7 +15,9 @@
 		<script src='js/jquery-ui.custom.min.js'></script>
 		<script src='js/fullcalendar.min.js'></script>
 	    <script src='js/main.js'></script>
-        <script language="javascript">
+        <script language="javascript"/>
+		<script src='js/main.js'></script>
+      <script language="javascript">
 
 	$(document).ready(function() {
 	
@@ -94,22 +96,26 @@
 		width: 100%;
 		margin: 0 auto;
 		}
+#main
+{
+ width:100%;
+display:inline-block;
+
+}
 </style>
 </head>
 	<body>
-		<div class="login_panel"></div>
-		<div class="menu_panel">
+		<div id="main">
+        	<div class="login_panel"></div>
+			<div class="menu_panel">
 			<div class="header">header</div>
-                
-			<div class="menu">menu</div>
-		</div>
-		
-		<div class="callendar_panel">
-        
-            <div id='calendar'></div>
-
-        </div>
-		<div class="info_panel"></div>
+				<div class="menu">menu</div>
+			</div>
+			<div class="callendar_panel">
+            	<div id='calendar'></div>
+        	</div>
+			<div class="info_panel"></div>
+		</div>		
 		<div class="footer_panel"></div>
 	</body>
 </html>

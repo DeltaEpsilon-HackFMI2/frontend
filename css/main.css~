@@ -109,7 +109,11 @@ width: 100%;
 
 
 }
-
+.footer_panel {
+	
+	width: 100%;
+	min-height:20px;
+}
 
 .calbox
 {
