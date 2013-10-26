@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>FMI-Calendar</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap-responsive.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -10,11 +11,11 @@
 		<script language="javascript" type="text/javascript" src="js/angular.js"></script>
         <link href='css/fullcalendar.css' rel='stylesheet' />
 	    <link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
-	    <script src='js/jquery.min.js'></script>
+	    <script src='js/main.js'></script>    <script src='js/jquery.min.js'></script>
 		<script src='js/jquery-ui.custom.min.js'></script>
 		<script src='js/fullcalendar.min.js'></script>
-	
-      <script language="javascript">
+	    <script src='js/main.js'></script>
+        <script language="javascript">
 
 	$(document).ready(function() {
 	
@@ -27,9 +28,25 @@
 			header: {
 				left: 'prev,next today',
 				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
+                right: ''
+				
 			},
-			editable: true,
+			monthNames:['Януари', 'Февруари', 'Март', 'Април', 'Май', 'Юни', 'Юли','Август', 'Септември', 'Октомври', 							'Ноември', 'Декември'],
+			monthNamesShort:['Ян', 'Февр', 'Март', 'Апр', 'Май', 'Юни', 'Юли',
+ 							'Авг', 'Септ', 'Окт', 'Нов', 'Дек'],
+			dayNames:['Неделя', 'Понеделник', 'Вторник', 'Сряда', 'Четвъртък', 'Петък', 'Събота'],
+			dayNamesShort:['Нед', 'Пон', 'Вт', 'Ср', 'Четв', 'Пк', 'Съб'],
+            buttonText: {
+       			 today:'ДНЕС'
+    					},
+			allDayText:'събития:',
+			minTime: 7,
+			maxTime: 22,
+			defaultView:'agendaWeek',
+			editable: false,
+			firstDay: 1,
+			timeFormat: 'H(:mm)',
+			axisFormat:'H(:mm)',
 			events: [
 				{
 					title: 'All Day Event',
@@ -71,24 +88,6 @@
 		});
 		
 	});
-
-</script>
-<style>
-
-	body {
-		margin-top: 40px;
-		text-align: center;
-		font-size: 14px;
-		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
-		}
-
-	#calendar {
-		width: 900px;
-		margin: 0 auto;
-		}
-
-</style>					
-
 </script>
 <style>
 #calendar {
