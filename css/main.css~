@@ -75,11 +75,39 @@ html,body {
 
 .menu_panel {
 	float: left;
-	height: 80%;
+	height: 95%;
 	width: 20%;
 	background-color: #ff0000;
 }
+.header{
+ position:relative;
+ 
+ background-color: #00FFFF;
+}
+.menu{
+ position:inline;
+ 
+ background-color: #C0C0C0;
+}
+.callendar_panel{
+	float: left;
+	height: 95%;
+	width: 60%;
+	background-color: #00FF00;
 
+}
+.info_panel{
+	float: left;
+	height: 95%;
+	width: 20%;
+	background-color: #C0C0C0;
+
+
+}
 .footer_panel {
-	
+	height:5%;
+	width: 100%;
+	background-color: #00FFFF;	
+    position:absolute;
+	bottom:5px;
 }
